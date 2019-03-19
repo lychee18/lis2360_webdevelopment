@@ -1,0 +1,102 @@
+@charset "UTF-8";
+/* CSS Document created by Mark Powell, Spring 2019 (3/19/19)*/
+
+body {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-size: 14px;
+	line-height: 1.5em;
+	color: #00000;
+	background-color: #FFF2E6;
+	padding: 0 40px;
+}
+
+/* basic text styles ----------------------------  */
+p, li, td {
+	letter-spacing: 0.05em;
+	color: #00000;
+}
+h1 {
+	font-size: 38px;
+	padding: 4px 0;
+	font-variant: small-caps;
+	letter-spacing: .5em;
+	line-height: 1.7em;
+}
+h2 {
+	font-size: 25px;
+	padding: 12px;
+	font-variant: small-caps;
+	letter-spacing: 0.5em;
+	background-color: #CC1665;
+	color: #FFFF70;
+}
+h3 {
+	font-size: 21px;
+	letter-spacing: 0.4em;
+	border-bottom-width: 2px;
+	border-bottom-style: inset;
+	border-bottom-color: #3AFFB7;
+	padding: 1px 0px 23px;
+	font-variant: small-caps;
+	font-style: italic;
+}
+
+/* link styles ---------------------------- */
+a:link {
+	font-weight: bold;
+	color: #CC1665;
+	text-decoration: none;
+	padding: 1px 0px 30px;
+}
+a:visited {
+	font-weight: bold;
+	color: #CC1665;
+	text-decoration: none;
+}
+a:hover {
+	color: #3AFFB7;
+}
+
+/* list styles ----------------------------- */
+ul li {
+	list-style-image: url(images/star.png);
+	margin-left: 8px;
+}
+ol {
+	margin-left: 2px;
+}
+
+/* table styles -------------------------------------- */
+table {
+	border: solid #3AFFB7 1px;
+	border-style: double;
+}
+td {
+	padding: 1px;
+	border: solid #3AFFB7 1px;
+	
+}
+th {
+	font-weight: bold;
+	background-color: #3AFFB7;
+	text-align: center;
+	padding: 6px;
+	border: solid #3AFFB7 1px;
+}
+
+/* border styles ------------------------------------ */
+hr {
+	border: solid #3AFFB7 1px;
+}
+
+img {
+	border: double #3AFFB7 8px;
+	padding: 8px;
+
+}
+
+iframe {
+	border: double #3AFFB7 8px;
+	padding: 8px;
+	margin: 8px;
+}
