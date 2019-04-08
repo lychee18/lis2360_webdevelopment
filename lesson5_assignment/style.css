@@ -6,7 +6,7 @@ body {
 	font-size: 14px;
 	line-height: 1.5em;
 	color: #00000;
-	background-color: #FFF2E6;
+	background-color: #00000;
 	padding: 0 40px;
 }
 
@@ -99,4 +99,47 @@ iframe {
 	border: double #3AFFB7 8px;
 	padding: 8px;
 	margin: 8px;
+}
+
+/* DIV STYLES FOR PAGE LAYOUT */
+
+#container { 
+	width: 900px; 
+	margin: 0 auto; 
+	background-color: #FFF2E6; 
+	overflow: hidden; 
+}
+#header { 
+	width: 100%; 
+	background-color: #FFE4BC;
+	border-bottom: 3px solid #3AFFB7;
+}
+#content { 
+	width: 600px;
+	float: left; 
+	padding-bottom: 40px;
+}
+#sidebar { 
+	width: 278px; 
+	float: right;
+	margin-top: 50px;
+	margin-right: 20px;
+	background-color: #FFE4BC;
+	border: 1px solid #3AFFB7;
+	border-radius: 12px;
+	box-shadow: 10px 10px 5px #888888;
+}
+#sidebar p{
+	padding: 0;
+	float: right;
+}
+#footer { 
+	clear: both;
+	width: 100%; 
+	background-color: #FFE4BC;
+	border-top: 3px solid #3AFFB7;
+}
+#footer p {
+	margin: 0;
+	padding: 40px;
 }
