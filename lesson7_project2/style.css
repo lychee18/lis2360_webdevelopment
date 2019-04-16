@@ -1,103 +1,182 @@
 @charset "UTF-8";
-/* CSS Document created by Mark Powell, Spring 2019 (3/19/19)*/
+/* CSS Document created by Mark Powell, Spring 2019 (4/15/19)*/
 
-body {
-	font-family: "Trebuchet MS", Helvetica, sans-serif;
-	font-size: 14px;
-	line-height: 1.5em;
-	color: #00000;
-	background-color: #FFF2E6;
-	padding: 0 40px;
+
+/* --------------------------- HTML TAG STYLES ----------------------------- */
+
+
+body{
+        margin: 0;  /* always zero out default browser margins and padding */
+        padding: 0;
+        color: #333;
+        font-family: 'Arimo';
 }
 
-/* basic text styles ----------------------------  */
-p, li, td {
-	letter-spacing: 0.05em;
-	color: #00000;
+p {
+  font-size: 14.3px;
+  margin-bottom: 20px;
+  line-height: 1.5em;
 }
+
 h1 {
-	font-size: 38px;
-	padding: 4px 0;
-	font-variant: small-caps;
-	letter-spacing: .5em;
-	line-height: 1.7em;
+  padding: 20px 0;
+  
 }
-h2 {
-	font-size: 25px;
-	padding: 12px;
-	font-variant: small-caps;
-	letter-spacing: 0.5em;
-	background-color: #CC1665;
-	color: #FFFF70;
-}
-h3 {
-	font-size: 21px;
-	letter-spacing: 0.4em;
-	border-bottom-width: 2px;
-	border-bottom-style: inset;
-	border-bottom-color: #3AFFB7;
-	padding: 1px 0px 23px;
-	font-variant: small-caps;
-	font-style: italic;
+h4 {
+  padding: 20px 0;
+  font-weight: bold;
 }
 
-/* link styles ---------------------------- */
-a:link {
-	font-weight: bold;
-	color: #CC1665;
-	text-decoration: none;
-	padding: 1px 0px 30px;
-}
-a:visited {
-	font-weight: bold;
-	color: #CC1665;
-	text-decoration: none;
-}
-a:hover {
-	color: #3AFFB7;
-}
-
-/* list styles ----------------------------- */
-ul li {
-	list-style-image: url(images/star.png);
-	margin-left: 8px;
-}
-ol {
-	margin-left: 2px;
-}
-
-/* table styles -------------------------------------- */
 table {
-	border: solid #3AFFB7 1px;
-	border-style: double;
+	border: solid #fff 1px;
+	border-collapse:collapse;
+	 font-size: 15px;
 }
+
 td {
-	padding: 1px;
-	border: solid #3AFFB7 1px;
-	
+	padding: 6px;
+	border: solid #fff 1px;
 }
 th {
 	font-weight: bold;
-	background-color: #3AFFB7;
+	color: #fff;
+	background-color:  #332532;
 	text-align: center;
 	padding: 6px;
-	border: solid #3AFFB7 1px;
+	border: solid #fff 1px;
 }
 
-/* border styles ------------------------------------ */
-hr {
-	border: solid #3AFFB7 1px;
+a:visited {
+	color: #67B8DE;
+}
+a:hover {
+	color: #660C47;
+	text-decoration: none;
 }
 
-img {
-	border: double #3AFFB7 8px;
-	padding: 8px;
+/* -------------------------- PAGE SECTIONS ---------------------------- */
 
+#splash{
+        background: url(images/cow.png) no-repeat center top fixed;
+        background-size: cover;
+        height: 1000px;
+    
 }
 
-iframe {
-	border: double #3AFFB7 8px;
-	padding: 8px;
-	margin: 8px;
+#overview{
+        padding: 40px 0 60px 0; /* top padding provides space for nav bar, bottom padding for asthetics */
+        background-color: #332532;
+        color: #fff;
+    
 }
 
+#video{
+        background: url(images/boy.png) no-repeat center top fixed;
+        padding: 40px 0 60px 0;	
+        color: #fff;
+        background-size: cover;
+      
+}
+
+#media{
+        background-color: #F77A52;
+        padding: 40px 0 60px 0;	
+        color: #fff;
+    
+}
+
+#footer{
+        background-color: #002F32;
+        color: #fff;
+  	    padding: 20px 0;
+    
+}
+
+/* ---------------- CONTAINER STYLES ----------------- */
+/* Containers are used to keep the page content within bounds centered in the browser window. */
+.container {
+  width: 960px; /* static width container always stays at this width no matter what the window size */
+  margin: 0 auto;
+  overflow: hidden;
+}
+.half_container { /* provides a two column presentation */
+  width: 50%;
+  float: left;
+  overflow: hidden;
+}
+
+/* ----------------- NAVIGATION BAR STYLES -------------------*/ 
+
+#navbar{
+	position: fixed; /* navbar should always be shown even when page is scrolled */
+	top: 0;
+	width: 100%;
+	height: 54px;
+	background-color: rgba(255, 255, 255, .6); 
+}	
+/* horizontal menu bars are typically created using a styled unordered list. Here's how! */
+ul#menu {
+	list-style: none; /* eliminates bullets */
+	/* adjust padding top to adjust nav bar vertical position */
+	padding-top: 0px;
+} 
+ul#menu li {
+	float: left; /* changes list from vertical to horizontal */
+	padding-bottom: 20px;
+} 
+ul#menu li a.button {
+	font-size: 16px;
+	text-decoration: none;
+	/* this padding defines the size of the buttons */
+	padding: 20px 100px 20px 100px; 
+}
+/* change button color when mouse hovers over */
+ul#menu li a.button:hover {
+	background-color: rgba(125, 107, 125, 0.2);
+}  
+
+/* ---------------- TITLE PAGE STYLES ------------------- */
+
+#title-page{
+  width: 100%;
+  padding-top: 200px; /* provides a lot of space above title to view the background image */
+  color: #fff;
+  text-align: right;
+}
+#title-page h1 {
+  font-family: 'Amaranth', sans-serif; /* Amaranth is a Google Font - see link in head of index.html */
+  font-size: 80px; 	
+  text-shadow: 3px 3px #000; /* Shadow helps text to stand out from background */
+}
+#title-page h3 {
+  font-size: 1em;
+  font-style: italic;
+  margin: 0 40px;
+  padding-bottom: 20px;
+  text-shadow: 2px 2px #000;
+}
+
+/* ------------------- FOOTER CREDITS --------------------- */
+
+#credits {
+  text-align: center;	
+}
+#credits table{      
+  margin: 0 auto;		/* centers the color palette table */
+}
+#credits p {
+  font-size: .8em;
+  margin: 10px 0;
+}
+
+
+/* ---------------------- MISC -----------------------------*/
+
+.fltright{
+	float:right;
+	margin: 20px;
+}
+.fltleft{
+	float:left;
+	margin: 20px 20px 20px 0;
+}
